@@ -19,8 +19,8 @@ def recommend(bk):
 
 
 st.header('Book-Recommender-system')
-books = pickle.load(open('model/finalbooks_new.pkl','rb'))
-similarity = pickle.load(open('model/similarity_new.pkl','rb'))
+books = pickle.load(open('finalbooks_new.pkl','rb'))
+similarity = pickle.load(open('similarity_new.pkl','rb'))
 
 book_list = books['title'].values
 selected_movie = st.selectbox("Type or Select a book: ",book_list)
